@@ -5,7 +5,7 @@ Welcome to the **React Interview Questions** repository! This collection is craf
 ## 🌟 Table of Contents
 
 - [Introduction](#introduction)
-- [Questions by Category](#questions-by-category)
+- [Questions by Category](#-questions-by-category)
   - [Basics](#basics)
   - [Hooks](#hooks)
   - [State Management](#state-management)
