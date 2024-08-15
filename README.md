@@ -79,6 +79,7 @@ React is one of the most popular JavaScript libraries for building user interfac
 2. **How do you manage state in a large application?**
    - Use state management libraries like Redux or MobX.
    - Use Context API for simpler state management.
+   - use Apollo GraphQL for state management and caching.
 
 ## 🌟 Contributing
 
