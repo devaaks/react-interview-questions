@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.rectangle {
+    width: 200px;
+    height: 200px;
+    align-self: center;
+    margin-bottom: 20px;
+}
