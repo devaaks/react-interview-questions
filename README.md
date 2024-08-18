@@ -15,6 +15,9 @@ Welcome to the **React Interview Questions** repository! This collection is craf
 - [Contributing](#contributing)
 - [License](#license)
 
+## 🌟 Links To Practicle Questions
+[Random-Color-Generator](src/Questions/Random-Color-Generator/README.md)
+
 ## 🌟 Introduction
 
 React is one of the most popular JavaScript libraries for building user interfaces. With its component-based architecture, it has revolutionized how we think about building web applications. This repository aims to consolidate some of the most frequently asked questions in React interviews to help you prepare and excel.
