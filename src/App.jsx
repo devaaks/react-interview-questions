@@ -1,22 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import AppLayout from './layouts/app-layout';
+import LandingPage from './Pages/Landing.page';
 import ColorGenerator from './Questions/Random-Color-Generator/ColorGenerator';
 
+const router = createBrowserRouter([
+  {
+    element: <AppLayout />,
+    children: [
+      {
+        path: '/',
+        element: <LandingPage />
+      },
+      {
+        path: '/random-color-generator',
+        element: <ColorGenerator />
+      }
+    ]
+  }
+]);
+
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>React Interview Questions</h1>
-      <ColorGenerator />
-    </>
+    <RouterProvider router={router}/>
   )
 }
 
