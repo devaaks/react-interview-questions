@@ -5,11 +5,13 @@ const AppLayout = () => {
     return (
         <>
             <div>
-                <a href="https://react.dev" target="_blank">
+                <a href="/" target="_blank">
                     <img src={reactLogo} className="logo react" alt="React logo" />
                 </a>
+                <h1>React Interview Questions</h1>
             </div>
-            <h1>React Interview Questions</h1>
+            
+            {/* Outlet renders the child components */}
             <Outlet />
         </>
     );

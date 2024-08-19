@@ -1,7 +1,7 @@
 import './App.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import AppLayout from './layouts/app-layout';
-import LandingPage from './Pages/Landing.page';
+import LandingPage from './Pages/Landing/Landing.page';
 import ColorGenerator from './Questions/Random-Color-Generator/ColorGenerator';
 
 const router = createBrowserRouter([
@@ -21,10 +21,7 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-
-  return (
-    <RouterProvider router={router}/>
-  )
+  return <RouterProvider router={router}/>;
 }
 
 export default App
