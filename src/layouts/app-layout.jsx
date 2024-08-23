@@ -1,10 +1,11 @@
 import { Outlet } from "react-router-dom";
 import reactLogo from '../assets//react.svg';
+import './layout.css';
 
 const AppLayout = () => {
     return (
         <>
-            <div>
+            <div className="header">
                 <a href="/" target="_blank">
                     <img src={reactLogo} className="logo react" alt="React logo" />
                 </a>
