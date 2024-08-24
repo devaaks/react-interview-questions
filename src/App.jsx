@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import AppLayout from './layouts/app-layout';
 import LandingPage from './Pages/Landing/Landing.page';
 import ColorGenerator from './Questions/Random-Color-Generator/ColorGenerator';
+import SinglVideoPlay from './Questions/Single-Video-Play';
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
       {
         path: '/random-color-generator',
         element: <ColorGenerator />
+      },
+      {
+        path: '/single-video-play',
+        element: <SinglVideoPlay />
       }
     ]
   }
