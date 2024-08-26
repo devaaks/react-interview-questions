@@ -47,7 +47,7 @@ function ColorGenerator() {
 
   return (
     <div>
-      <div style={{ width: '200px', height: '200px', backgroundColor: color }} />
+      <div style={{ backgroundColor: color }} />
       <button onClick={generateRandomColor}>Generate Random Color</button>
     </div>
   );
