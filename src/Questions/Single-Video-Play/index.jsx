@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import './Style.css';
+import './style.css';
 
 const SinglVideoPlay = () => {
   const [currentVideoResolution, setCurrentVideoResolution] = useState(null);
