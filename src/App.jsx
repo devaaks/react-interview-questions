@@ -5,6 +5,7 @@ import LandingPage from './Pages/Landing/Landing.page';
 import ColorGenerator from './Questions/Random-Color-Generator/ColorGenerator';
 import SinglVideoPlay from './Questions/Single-Video-Play';
 import StopButtonRender from './Questions/Stop-Button-Render/StopButtonRender';
+import DebounceQuestion from './Questions/Debouncer/Debouncer';
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,11 @@ const router = createBrowserRouter([
         path: '/stop-button-render',
         element: <StopButtonRender />
       },
+      {
+        path: '/debounce-question',
+        element: <DebounceQuestion />
+      },
+      
     ]
   }
 ]);
