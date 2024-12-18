@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
+import { useState, FC } from 'react';
 import './Style.css';
 
 // 16777215 represents the maximum value in a 24-bit RGB color system.
-const MAX_RGB_VALUE = 16777215;
+const MAX_RGB_VALUE: number = 16777215;
 
-const ColorGenerator = () => {
-  const [color, setColor] = useState('#000000');
+const ColorGenerator: FC = () => {
+  const [color, setColor] = useState<string>('#000000');
 
-  const generateRandomColor = () => {
+  const generateRandomColor = (): void => {
     // toString(16): Converts the number to a hexadecimal string (base 16 -  hex color codes format)
-    const randomColor = '#' + Math.floor(Math.random() * MAX_RGB_VALUE).toString(16);
+    const randomColor: string = '#' + Math.floor(Math.random() * MAX_RGB_VALUE).toString(16);
     setColor(randomColor);
   };
 
@@ -28,8 +28,8 @@ export default ColorGenerator;
 Explanation - 
 
 Breakdown of 16777215:
-> 24-bit color: This means we have 24 bits to represent a color.   
-> RGB: Red, Green, and Blue are the primary colors used.  
+> 24-bit color: This means we have 24 bits to represent a color.   
+> RGB: Red, Green, and Blue are the primary colors used.  
 > Each color channel: Has 8 bits, which can represent values from 0 to 255.
     
     So, the total number of possible color combinations is:

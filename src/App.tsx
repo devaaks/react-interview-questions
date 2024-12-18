@@ -1,9 +1,9 @@
-import './App.css'
+import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import AppLayout from './layouts/app-layout';
 import LandingPage from './Pages/Landing/Landing.page';
 import ColorGenerator from './Questions/Random-Color-Generator/ColorGenerator';
-import SinglVideoPlay from './Questions/Single-Video-Play';
+import SingleVideoPlay from './Questions/Single-Video-Play';
 import StopButtonRender from './Questions/Stop-Button-Render/StopButtonRender';
 import DebounceQuestion from './Questions/Debouncer/Debouncer';
 
@@ -21,7 +21,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/single-video-play',
-        element: <SinglVideoPlay />
+        element: <SingleVideoPlay />
       },
       {
         path: '/stop-button-render',
@@ -30,14 +30,13 @@ const router = createBrowserRouter([
       {
         path: '/debounce-question',
         element: <DebounceQuestion />
-      },
-      
+      }
     ]
   }
 ]);
 
-function App() {
-  return <RouterProvider router={router}/>;
+const App: React.FC = () => {
+  return <RouterProvider router={router} />;
 }
 
-export default App
+export default App;
